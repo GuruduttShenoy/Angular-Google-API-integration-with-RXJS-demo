@@ -1,0 +1,23 @@
+<div class="search-screen">
+  <h2>
+    <img class="angular-logo" src="../assets/angular-logo.png" />-
+    <img class="google-logo" src="../assets/google-logo-2.png" />
+    {{title}}
+    <img class="rxjs-logo" src="../assets/rxjs-logo.png" />
+  </h2>
+  <br />
+  <br />
+  <form [formGroup]="SearchForm" class="search-form">
+    <label for="search" class ="lbl-search"><img class="google-search-logo" src="../assets/sherlock-logo.jpg" /></label>
+    <input type="text" formControlName="search" #search />
+  </form>
+  <br/>
+  <div *ngFor="let result of results$ | async">
+    <a [href]="result.link" target="_blank">
+      <h3>{{result.title}}</h3>
+    </a>
+    <div class="search-description">
+      <p>{{result.snippet}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+.search-screen{
+    text-align: left;
+    padding-left: 150px;
+    display: inline-block;
+}
+
+.angular-logo, .google-logo, .rxjs-logo{
+    height: 60px; 
+    width: 140px; 
+    vertical-align: middle;
+}
+
+.google-search-logo{
+    @extend.angular-logo;
+    height: 120px; 
+    width: 120px;
+}
+
+.search-description{
+    white-space: pre-wrap;
+}
+
+// .search-results{
+//     padding-left: 100px;
+//     text-align: left;
+// }
+
+.lbl-search{
+    font-size: 25px;
+}
+
+// .search-form{
+//     display: inline-block;
+// }
